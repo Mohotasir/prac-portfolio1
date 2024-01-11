@@ -43,7 +43,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 200px;
+    margin: 0 100px;
 }
 nav > h3{
     font-size: 45px;
@@ -74,7 +74,11 @@ nav a{
     background-position: bottom right;
     background-size: 700px;
 }
-
+.contact-btn{
+    background: none;
+    border: 1px solid #FD6E0A;
+    color: #FD6E0A;
+}
 .banner{
     padding:30px 30px 0px 150px;
     display: flex;
@@ -210,4 +214,64 @@ footer{
 .fc-title{
     text-align: left;
     color: #474747;
+}
+
+
+/* media responsive....... */
+
+@media screen  and (max-width:576px){
+    .banner,nav,nav > ul,footer,.about-info-container,.skills-main-container,.resume-container{
+        flex-direction: column;
+    }
+    .header-class{
+        background-size: 400px;
+    }
+    .btn-primary{
+        padding: 10px 30px;
+        font-size: 15px;
+    }
+    nav{
+        justify-content: center;
+        margin: 0 30px;
+    }
+    nav>ul{
+        margin-top: -30px;
+    }
+    nav > ul >li{
+        margin-bottom: 10px;
+    }
+    .banner{
+        padding: 25px;
+    }
+    .banner img{
+        width: 100%;
+        margin-bottom: -25px;
+    }
+    .banner h3{
+        font-size: 25px;
+    }
+    .banner h1{
+        font-size: 40px;
+    }
+    .contact-btn{
+        margin-top: .5rem;
+    }
+    .about,#i-do-sec{
+        padding: 10px;
+    }
+    .skills-container{
+        margin: 0 25px;
+    }
+    .resume-container{
+        padding: 5px 15px;
+    }
+    .footer-colum{
+        width: 100%;
+    }
+    footer{
+        padding: 40px 20px;
+    }
+    .contact input[type="text"], input[type="email"], textarea{
+        width: 70%;
+    }
 }
